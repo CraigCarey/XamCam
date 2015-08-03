@@ -83,7 +83,7 @@ namespace XamCam.iOS
 			Session.SessionPreset = AVCaptureSession.PresetMedium;
 
 			// Create a device input
-			CaptureDevice = AVCaptureDevice.DefaultDeviceWithMediaType (AVMediaType.Video);
+            CaptureDevice = GetFrontCamera();
 			if (CaptureDevice == null) {
 				// Video capture not supported, abort
 				Console.WriteLine ("Video recording not supported on this device");
@@ -160,5 +160,21 @@ namespace XamCam.iOS
         {
         }
         #endregion
+
+        private static AVCaptureDevice GetFrontCamera()
+        {
+            var devices = AVCaptureDevice.DevicesWithMediaType(AVMediaType.Video);
+
+            foreach (AVCaptureDevice device in devices)
+            {
+                //if (string.Compare(device.LocalizedName, localizedDeviceName, true) == 0)
+                if (device.Position == AVCaptureDevicePosition.Front)
+                {
+                    return device;
+                }
+            }
+
+            return null;
+        }
     }
 }

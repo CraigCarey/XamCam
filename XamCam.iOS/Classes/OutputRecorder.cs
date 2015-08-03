@@ -107,6 +107,7 @@ namespace XamCam.iOS
                         DisplayView.Image = image;
 
                         // Rotate image to the correct display orientation
+                        //DisplayView.Transform = CGAffineTransform.MakeRotation((float)Math.PI / 2);
                         DisplayView.Transform = CGAffineTransform.MakeRotation((float)Math.PI / 2);
                     });
                 }
