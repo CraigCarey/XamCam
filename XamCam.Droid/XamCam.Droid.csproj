@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -6,14 +6,14 @@
     <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <ProjectGuid>{11E9FAD2-1DA1-4ED0-ABA9-F8A37161F4DF}</ProjectGuid>
     <OutputType>Library</OutputType>
-    <RootNamespace>Camera2VideoSample</RootNamespace>
+    <RootNamespace>XamCam.Droid</RootNamespace>
     <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
     <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
     <AndroidResgenClass>Resource</AndroidResgenClass>
     <AndroidResgenFile>Resources\Resource.designer.cs</AndroidResgenFile>
     <AndroidApplication>True</AndroidApplication>
     <AndroidUseLatestPlatformSdk>False</AndroidUseLatestPlatformSdk>
-    <AssemblyName>Camera2VideoSample</AssemblyName>
+    <AssemblyName>XamCam</AssemblyName>
     <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
     <TargetFrameworkVersion>v5.0</TargetFrameworkVersion>
     <AndroidSdkBuildToolsVersion>20.0.0</AndroidSdkBuildToolsVersion>
@@ -75,7 +75,6 @@
     <AndroidResource Include="Resources\drawable-xhdpi\ic_launcher.png" />
     <AndroidResource Include="Resources\drawable-xxhdpi\ic_action_info.png" />
     <AndroidResource Include="Resources\drawable-xxhdpi\ic_launcher.png" />
-    <AndroidResource Include="Resources\layout-land\fragment_camera2_video.xml" />
     <AndroidResource Include="Resources\values-sw600dp\template-dimens.xml" />
     <AndroidResource Include="Resources\values-sw600dp\template-styles.xml" />
     <AndroidResource Include="Resources\values-v11\template-styles.xml" />
@@ -89,14 +88,5 @@
     <AndroidResource Include="Resources\layout\fragment_camera2_video.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
-  <ItemGroup>
-    <Folder Include="Resources\drawable-hdpi\" />
-    <Folder Include="Resources\drawable-mdpi\" />
-    <Folder Include="Resources\drawable-xhdpi\" />
-    <Folder Include="Resources\drawable-xxhdpi\" />
-    <Folder Include="Resources\layout-land\" />
-    <Folder Include="Resources\values-sw600dp\" />
-    <Folder Include="Resources\values-v11\" />
-    <Folder Include="Resources\values-v21\" />
-  </ItemGroup>
+  <ItemGroup />
 </Project>

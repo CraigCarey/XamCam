@@ -8,7 +8,7 @@ using Android.Widget;
 using Android.OS;
 using Android.Content.PM;
 
-namespace Camera2VideoSample
+namespace XamCam.Droid
 {
     [Activity(Label = "XamCam", MainLauncher = true, Icon = "@drawable/ic_launcher", Theme = "@android:style/Theme.NoTitleBar",
         ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation, ScreenOrientation = ScreenOrientation.Portrait)]

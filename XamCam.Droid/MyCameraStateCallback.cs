@@ -2,7 +2,7 @@
 using Android.Hardware.Camera2;
 using Android.Widget;
 
-namespace Camera2VideoSample
+namespace XamCam.Droid
 {
 	public class MyCameraStateCallback : CameraDevice.StateCallback
 	{

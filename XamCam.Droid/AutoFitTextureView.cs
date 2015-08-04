@@ -12,7 +12,7 @@ using Android.Util;
 using Android.Views;
 using Android.Widget;
 
-namespace Camera2VideoSample
+namespace XamCam.Droid
 {
 	public class AutoFitTextureView : TextureView
 	{

@@ -1,4 +1,5 @@
-﻿using System;
+﻿
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,7 +24,7 @@ using Java.IO;
 using Java.Util.Concurrent;
 
 
-namespace Camera2VideoSample
+namespace XamCam.Droid
 {
 	public class Camera2VideoFragment : Fragment, View.IOnClickListener
 	{
@@ -113,7 +114,7 @@ namespace Camera2VideoSample
 			textureView = (AutoFitTextureView)view.FindViewById (Resource.Id.texture);
 			buttonVideo = (Button)view.FindViewById (Resource.Id.video);
 			buttonVideo.SetOnClickListener (this);
-			view.FindViewById (Resource.Id.info).SetOnClickListener (this);
+            //view.FindViewById (Resource.Id.info).SetOnClickListener (this);
 
 		}
 
@@ -167,16 +168,16 @@ namespace Camera2VideoSample
 					break;
 				}
 
-			case Resource.Id.info:
-				{
-					if (null != Activity) {
-						new AlertDialog.Builder (Activity)
-							.SetMessage (Resource.String.intro_message)
-							.SetPositiveButton (Android.Resource.String.Ok, (Android.Content.IDialogInterfaceOnClickListener)null)
-							.Show ();
-					}
-					break;
-				}
+            //case Resource.Id.info:
+            //    {
+            //        if (null != Activity) {
+            //            new AlertDialog.Builder (Activity)
+            //                .SetMessage (Resource.String.intro_message)
+            //                .SetPositiveButton (Android.Resource.String.Ok, (Android.Content.IDialogInterfaceOnClickListener)null)
+            //                .Show ();
+            //        }
+            //        break;
+            //    }
 			}
 		}
 

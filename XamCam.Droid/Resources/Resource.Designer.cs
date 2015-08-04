@@ -9,9 +9,9 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Android.Runtime.ResourceDesignerAttribute("Camera2VideoSample.Resource", IsApplication=true)]
+[assembly: global::Android.Runtime.ResourceDesignerAttribute("XamCam.Droid.Resource", IsApplication=true)]
 
-namespace Camera2VideoSample
+namespace XamCam.Droid
 {
 	
 	
@@ -26,28 +26,28 @@ namespace Camera2VideoSample
 		
 		public static void UpdateIdValues()
 		{
-			global::Xamarin.Android.NUnitLite.Resource.Id.OptionHostName = global::Camera2VideoSample.Resource.Id.OptionHostName;
-			global::Xamarin.Android.NUnitLite.Resource.Id.OptionPort = global::Camera2VideoSample.Resource.Id.OptionPort;
-			global::Xamarin.Android.NUnitLite.Resource.Id.OptionRemoteServer = global::Camera2VideoSample.Resource.Id.OptionRemoteServer;
-			global::Xamarin.Android.NUnitLite.Resource.Id.OptionsButton = global::Camera2VideoSample.Resource.Id.OptionsButton;
-			global::Xamarin.Android.NUnitLite.Resource.Id.ResultFullName = global::Camera2VideoSample.Resource.Id.ResultFullName;
-			global::Xamarin.Android.NUnitLite.Resource.Id.ResultMessage = global::Camera2VideoSample.Resource.Id.ResultMessage;
-			global::Xamarin.Android.NUnitLite.Resource.Id.ResultResultState = global::Camera2VideoSample.Resource.Id.ResultResultState;
-			global::Xamarin.Android.NUnitLite.Resource.Id.ResultRunSingleMethodTest = global::Camera2VideoSample.Resource.Id.ResultRunSingleMethodTest;
-			global::Xamarin.Android.NUnitLite.Resource.Id.ResultStackTrace = global::Camera2VideoSample.Resource.Id.ResultStackTrace;
-			global::Xamarin.Android.NUnitLite.Resource.Id.ResultsFailed = global::Camera2VideoSample.Resource.Id.ResultsFailed;
-			global::Xamarin.Android.NUnitLite.Resource.Id.ResultsId = global::Camera2VideoSample.Resource.Id.ResultsId;
-			global::Xamarin.Android.NUnitLite.Resource.Id.ResultsIgnored = global::Camera2VideoSample.Resource.Id.ResultsIgnored;
-			global::Xamarin.Android.NUnitLite.Resource.Id.ResultsInconclusive = global::Camera2VideoSample.Resource.Id.ResultsInconclusive;
-			global::Xamarin.Android.NUnitLite.Resource.Id.ResultsMessage = global::Camera2VideoSample.Resource.Id.ResultsMessage;
-			global::Xamarin.Android.NUnitLite.Resource.Id.ResultsPassed = global::Camera2VideoSample.Resource.Id.ResultsPassed;
-			global::Xamarin.Android.NUnitLite.Resource.Id.ResultsResult = global::Camera2VideoSample.Resource.Id.ResultsResult;
-			global::Xamarin.Android.NUnitLite.Resource.Id.RunTestsButton = global::Camera2VideoSample.Resource.Id.RunTestsButton;
-			global::Xamarin.Android.NUnitLite.Resource.Id.TestSuiteListView = global::Camera2VideoSample.Resource.Id.TestSuiteListView;
-			global::Xamarin.Android.NUnitLite.Resource.Layout.options = global::Camera2VideoSample.Resource.Layout.options;
-			global::Xamarin.Android.NUnitLite.Resource.Layout.results = global::Camera2VideoSample.Resource.Layout.results;
-			global::Xamarin.Android.NUnitLite.Resource.Layout.test_result = global::Camera2VideoSample.Resource.Layout.test_result;
-			global::Xamarin.Android.NUnitLite.Resource.Layout.test_suite = global::Camera2VideoSample.Resource.Layout.test_suite;
+			global::Xamarin.Android.NUnitLite.Resource.Id.OptionHostName = global::XamCam.Droid.Resource.Id.OptionHostName;
+			global::Xamarin.Android.NUnitLite.Resource.Id.OptionPort = global::XamCam.Droid.Resource.Id.OptionPort;
+			global::Xamarin.Android.NUnitLite.Resource.Id.OptionRemoteServer = global::XamCam.Droid.Resource.Id.OptionRemoteServer;
+			global::Xamarin.Android.NUnitLite.Resource.Id.OptionsButton = global::XamCam.Droid.Resource.Id.OptionsButton;
+			global::Xamarin.Android.NUnitLite.Resource.Id.ResultFullName = global::XamCam.Droid.Resource.Id.ResultFullName;
+			global::Xamarin.Android.NUnitLite.Resource.Id.ResultMessage = global::XamCam.Droid.Resource.Id.ResultMessage;
+			global::Xamarin.Android.NUnitLite.Resource.Id.ResultResultState = global::XamCam.Droid.Resource.Id.ResultResultState;
+			global::Xamarin.Android.NUnitLite.Resource.Id.ResultRunSingleMethodTest = global::XamCam.Droid.Resource.Id.ResultRunSingleMethodTest;
+			global::Xamarin.Android.NUnitLite.Resource.Id.ResultStackTrace = global::XamCam.Droid.Resource.Id.ResultStackTrace;
+			global::Xamarin.Android.NUnitLite.Resource.Id.ResultsFailed = global::XamCam.Droid.Resource.Id.ResultsFailed;
+			global::Xamarin.Android.NUnitLite.Resource.Id.ResultsId = global::XamCam.Droid.Resource.Id.ResultsId;
+			global::Xamarin.Android.NUnitLite.Resource.Id.ResultsIgnored = global::XamCam.Droid.Resource.Id.ResultsIgnored;
+			global::Xamarin.Android.NUnitLite.Resource.Id.ResultsInconclusive = global::XamCam.Droid.Resource.Id.ResultsInconclusive;
+			global::Xamarin.Android.NUnitLite.Resource.Id.ResultsMessage = global::XamCam.Droid.Resource.Id.ResultsMessage;
+			global::Xamarin.Android.NUnitLite.Resource.Id.ResultsPassed = global::XamCam.Droid.Resource.Id.ResultsPassed;
+			global::Xamarin.Android.NUnitLite.Resource.Id.ResultsResult = global::XamCam.Droid.Resource.Id.ResultsResult;
+			global::Xamarin.Android.NUnitLite.Resource.Id.RunTestsButton = global::XamCam.Droid.Resource.Id.RunTestsButton;
+			global::Xamarin.Android.NUnitLite.Resource.Id.TestSuiteListView = global::XamCam.Droid.Resource.Id.TestSuiteListView;
+			global::Xamarin.Android.NUnitLite.Resource.Layout.options = global::XamCam.Droid.Resource.Layout.options;
+			global::Xamarin.Android.NUnitLite.Resource.Layout.results = global::XamCam.Droid.Resource.Layout.results;
+			global::Xamarin.Android.NUnitLite.Resource.Layout.test_result = global::XamCam.Droid.Resource.Layout.test_result;
+			global::Xamarin.Android.NUnitLite.Resource.Layout.test_suite = global::XamCam.Droid.Resource.Layout.test_suite;
 		}
 		
 		public partial class Attribute
@@ -125,65 +125,62 @@ namespace Camera2VideoSample
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f070005
-			public const int OptionHostName = 2131165189;
-			
-			// aapt resource value: 0x7f070006
-			public const int OptionPort = 2131165190;
-			
 			// aapt resource value: 0x7f070004
-			public const int OptionRemoteServer = 2131165188;
+			public const int OptionHostName = 2131165188;
 			
-			// aapt resource value: 0x7f070014
-			public const int OptionsButton = 2131165204;
+			// aapt resource value: 0x7f070005
+			public const int OptionPort = 2131165189;
 			
-			// aapt resource value: 0x7f07000f
-			public const int ResultFullName = 2131165199;
-			
-			// aapt resource value: 0x7f070011
-			public const int ResultMessage = 2131165201;
-			
-			// aapt resource value: 0x7f070010
-			public const int ResultResultState = 2131165200;
-			
-			// aapt resource value: 0x7f07000e
-			public const int ResultRunSingleMethodTest = 2131165198;
-			
-			// aapt resource value: 0x7f070012
-			public const int ResultStackTrace = 2131165202;
-			
-			// aapt resource value: 0x7f07000a
-			public const int ResultsFailed = 2131165194;
-			
-			// aapt resource value: 0x7f070007
-			public const int ResultsId = 2131165191;
-			
-			// aapt resource value: 0x7f07000b
-			public const int ResultsIgnored = 2131165195;
-			
-			// aapt resource value: 0x7f07000c
-			public const int ResultsInconclusive = 2131165196;
-			
-			// aapt resource value: 0x7f07000d
-			public const int ResultsMessage = 2131165197;
-			
-			// aapt resource value: 0x7f070009
-			public const int ResultsPassed = 2131165193;
-			
-			// aapt resource value: 0x7f070008
-			public const int ResultsResult = 2131165192;
+			// aapt resource value: 0x7f070003
+			public const int OptionRemoteServer = 2131165187;
 			
 			// aapt resource value: 0x7f070013
-			public const int RunTestsButton = 2131165203;
+			public const int OptionsButton = 2131165203;
 			
-			// aapt resource value: 0x7f070015
-			public const int TestSuiteListView = 2131165205;
+			// aapt resource value: 0x7f07000e
+			public const int ResultFullName = 2131165198;
+			
+			// aapt resource value: 0x7f070010
+			public const int ResultMessage = 2131165200;
+			
+			// aapt resource value: 0x7f07000f
+			public const int ResultResultState = 2131165199;
+			
+			// aapt resource value: 0x7f07000d
+			public const int ResultRunSingleMethodTest = 2131165197;
+			
+			// aapt resource value: 0x7f070011
+			public const int ResultStackTrace = 2131165201;
+			
+			// aapt resource value: 0x7f070009
+			public const int ResultsFailed = 2131165193;
+			
+			// aapt resource value: 0x7f070006
+			public const int ResultsId = 2131165190;
+			
+			// aapt resource value: 0x7f07000a
+			public const int ResultsIgnored = 2131165194;
+			
+			// aapt resource value: 0x7f07000b
+			public const int ResultsInconclusive = 2131165195;
+			
+			// aapt resource value: 0x7f07000c
+			public const int ResultsMessage = 2131165196;
+			
+			// aapt resource value: 0x7f070008
+			public const int ResultsPassed = 2131165192;
+			
+			// aapt resource value: 0x7f070007
+			public const int ResultsResult = 2131165191;
+			
+			// aapt resource value: 0x7f070012
+			public const int RunTestsButton = 2131165202;
+			
+			// aapt resource value: 0x7f070014
+			public const int TestSuiteListView = 2131165204;
 			
 			// aapt resource value: 0x7f070000
 			public const int container = 2131165184;
-			
-			// aapt resource value: 0x7f070003
-			public const int info = 2131165187;
 			
 			// aapt resource value: 0x7f070001
 			public const int texture = 2131165185;

@@ -2,7 +2,7 @@
 using Android.Views;
 using Android.Graphics;
 
-namespace Camera2VideoSample
+namespace XamCam.Droid
 {
 	public class MySurfaceTextureListener: Java.Lang.Object,TextureView.ISurfaceTextureListener
 	{
