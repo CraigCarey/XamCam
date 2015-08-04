@@ -167,17 +167,6 @@ namespace XamCam.Droid
 					}
 					break;
 				}
-
-            //case Resource.Id.info:
-            //    {
-            //        if (null != Activity) {
-            //            new AlertDialog.Builder (Activity)
-            //                .SetMessage (Resource.String.intro_message)
-            //                .SetPositiveButton (Android.Resource.String.Ok, (Android.Content.IDialogInterfaceOnClickListener)null)
-            //                .Show ();
-            //        }
-            //        break;
-            //    }
 			}
 		}
 
@@ -189,9 +178,15 @@ namespace XamCam.Droid
 
 			CameraManager manager = (CameraManager)Activity.GetSystemService (Context.CameraService);
 			try {
-				if(!cameraOpenCloseLock.TryAcquire(2500,TimeUnit.Milliseconds))
-					throw new RuntimeException("Time out waiting to lock camera opening.");
-				string cameraId = manager.GetCameraIdList()[0];
+
+                if (!cameraOpenCloseLock.TryAcquire(2500, TimeUnit.Milliseconds))
+                {
+                    throw new RuntimeException("Time out waiting to lock camera opening.");
+                }
+
+                //string cameraId = manager.GetCameraIdList()[1];
+                string cameraId = getFrontFacingCameraId(manager);
+
 				CameraCharacteristics characteristics = manager.GetCameraCharacteristics(cameraId);
 				StreamConfigurationMap map = (StreamConfigurationMap)characteristics.Get(CameraCharacteristics.ScalerStreamConfigurationMap);
 				videoSize = ChooseVideoSize(map.GetOutputSizes(Class.FromType(typeof(MediaRecorder))));
@@ -216,6 +211,23 @@ namespace XamCam.Droid
 				throw new RuntimeException ("Interrupted while trying to lock camera opening.");
 			}
 		}
+
+        private string getFrontFacingCameraId(CameraManager cManager)
+        {
+            foreach(string cameraId in cManager.GetCameraIdList())
+            {
+                CameraCharacteristics characteristics = cManager.GetCameraCharacteristics(cameraId);
+                var cOrientation = characteristics.Get(CameraCharacteristics.LensFacing);
+                if (cOrientation == CameraCharacteristics.LensFacing)
+                {
+                    return cameraId;
+                }
+
+                //int cOrientation = characteristics.Get(CameraCharacteristics.LensFacing);
+                //if(cOrientation == CameraCharacteristics.LensFacing) return cameraId;
+            }
+            return null;
+        }
 
 		//Start the camera preview
 		public void startPreview()
